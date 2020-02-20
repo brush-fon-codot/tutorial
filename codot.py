@@ -1,17 +1,44 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-import os, sys, subprocess
-from time import sleep
-os.system("clear")
-reload(sys)
-sys.setdefaultencoding("utf-8")
+#!/usr/bin/python2
+#-*- coding: utf-8 -*-
+import os
+import time
+import sys
+import time
 
-host = " "
-port = " "
-output = " "
+def expetasi():
+		print c+"[1] "+p+"Youtube"
+		print c+"[2] "+p+"Website"
+		print c+"[3] "+p+"Contact"
+		pilih = input("Gak pilih besok mati > ")
+		if pilih ==1:
+			os.system('clear')
+			print("~Jangan lupa untuk subscribe dan klik lonceng")
+			time.sleep(2)
+			os.system("termux-open-url https://www.youtube.com/channel/UCnV18haS6MvRkqYbRMYm7Zg")
+		elif pilih ==2:
+			os.system('clear')
+			os.system("termux-open-url https://www.gagapilmu.tech")
+		elif pilih ==3:
+			os.system('clear') 
+			os.system("termux-open-url https://wa.me/+6289650267608")
 
-def logo():
- print("""
+
+def blacksmoke():
+        print c+"[1] "+p+"Youtube"
+        print c+"[2] "+p+"Website"
+        print c+"[3] "+p+"Contact"
+        pilih = input("Gak pilih besok mati > ")
+        if pilih ==1:
+                os.system('clear')
+                print("~Jangan lupa untuk subscribe dan klik lonceng")
+                time.sleep(2)                                                                                     
+		os.system("termux-open-url https://www.youtube.com/channel/UC2bPH6mgQg11JNLW23G6T")
+        elif pilih==2:
+                os.system('clear')
+                os.system("termux-open-url http://odiq1337.blogspot.com")
+        elif pilih==3:
+                os.system('clear')
+                os.system("termux-open-url https://wa.me/+6281364873762")
 
 b = '\033[34;1m'
 g = '\033[32;1m'
@@ -33,89 +60,29 @@ print y+"               /    /  .    ( .  ,| |("
 print y+"_.-`'---...__,'    /-,..___.-'--'_| |_)"
 print y+"'-'``'-.._       ,'  |   / .........'"
 print y+"       ``;--'`;   |   `-`"
-print y+"             `'..__.'\n"                                       
-                          
+print y+"             `'..__.'\n"
 
+print w+"[1].About              "+c+"[3].Lanjut"
+print b+"[2].Exit               "+r+"[4].Hubungi admin"
 
-\t [*] Author : an brush fon
-\t [*] Coded By :20k19™
-\t [*] AndroSec1337 indonesian darknet public
-  """)
+pilih = input("pilih > ")
 
-def help():
- print("""
-  Commands :
-       set HOST       : Set Your Host (e.g set HOST 127.0.0.1)
-       set PORT       : Set Your Port (e.g set PORT 1337)
-       set OUTPUT     : Set Your Output Name And Path (e.g set OUTPUT /home/payload)
-       show values    : Show Host, Port And Output Value
-       start listener : Start Your Conection Server
+if pilih == 1:
+	print c+"[1]. (An brush fon"
+	print p+"[2].(unknown)"
+	pilih = input("About > ")
+	if pilih ==1:
+		blacksmoke()
+	elif pilih ==2:
+		expetasi()
+elif pilih == 3:
+	os.system('python2 V-BP.py')
 
-  Please Report This bug To My Kontak
-  WHATSAPP : https://api.whatsapp.com/send?phone=6289637763566
-  TELEGRAM : https://t.me/cdt28
-
-def main():
-    global host, port, output
-
-    while True:
-        cmd = raw_input("[*] root@localhost:~# ").lower()
-
-        if cmd == "help":
-            help()
-
-        elif cmd == 'banner':
-            os.system("clear")
-            logo()
-            main()
-
-        elif "clear" in cmd:
-            os.system("clear")
-
-        elif "set host" in cmd:
-            host = cmd.split()[-1]
-
-        elif "set port" in cmd:
-            port = int(cmd.split()[-1])
-
-        elif "set output" in cmd:
-            output = cmd.split()[-1]
-
-        elif cmd == "show values":
-            print "\n[+] HOST   : %s\n[+] PORT   : %s\n[+] OUTPUT : %s\n"%(host, port,output)
-
-        elif cmd == "generate payload" or cmd == "generate":
-            if host != " " and port != " " and output != " ":
-                print("[+] Generating Payload . . .")
-                sleep(1)
-                print("[*] Using Configuration . . .\n |_ HOST   : "+host+"\n |_ PORT   : "+str(port)+"\n |_ OUTPUT : "+output)
-                sleep(3)
-                os.system("sh modules/gen.sh "+host+" "+str(port)+" "+output)
-                print("[+] Generating Success . . .")
-                sleep(1)
-                main()
-            else:
-                print "\n[!] HOST   : %s\n[!] PORT   : %s\n[!] OUTPUT : %s\n"%(host,port,output)
-
-        elif cmd == "start" or cmd == "run" or cmd == "start listener":
-            if host != " " and port != " ":
-                if os.name == "nt":
-                    subprocess.Popen([sys.executable, 'modules/listener.py', host, str(port)], creationflags=subprocess.CREATE_NEW_CONSOLE)
-                else:
-                    os.system(sys.executable + " modules/listener.py %s %s"%(host, str(port)))
-            else:
-                print "\n[!] Host : %s\n[!] Port : %s\n"%(host,port)
-        else:
-            print("[!] Check Your Command . . .")
-            main()
-
-def contol():
-    try:
-        logo()
-        main()
-    except KeyboardInterrupt:
-        print("\n[!] CTRL+C Detect Exiting Tools . . .")
-        sleep(2)
-        sys.exit()
-if __name__ == "__main__":
-    contol()
+elif pilih == 4:
+        print(w+"[1].An brush fon")
+        print(g+"[2].unknown")
+        oh = input("Rcode > ")
+        if oh ==2:
+        	os.system("termux-open-url https://wa.me/6289660267608") 
+	elif oh ==1:
+        	os.system("termux-open-url https://wa.me/6289637763566")
