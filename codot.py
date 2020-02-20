@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os, sys, subprocess
 from time import sleep
@@ -14,7 +14,7 @@ def logo():
  print("""
 
 
-\t  █████╗       ██████╗  █████╗ ████████╗'
+\t   █████╗       ██████╗  █████╗ ████████╗'
 \t██╔══██╗      ██╔══██╗██╔══██╗╚══██╔══╝
 \t███████║█████╗██████╔╝███████║   ██║   
 \t██╔══██║╚════╝██╔══██╗██╔══██║   ██║   
