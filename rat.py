@@ -1,6 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
+bi='\033[34;1m' #biru tua
+ij='\033[32;1m' #ijo
+pr='\033[35;1m' #pink
+cy='\033[36;1m' #biru nuda
+me='\033[31;1m' #merah
+pu='\033[37;1m' #putih
+bu='\e[1;30m' #abu abu
+ku='\033[33;1m' #kuning
+or='\033[1;38;5;208m' #oren
+clear
 import os, sys, subprocess
 from time import sleep
 os.system("clear")
@@ -15,7 +24,7 @@ def logo():
  print("""
 
 
-\t█████╗       ██████╗  █████╗ ████████╗
+echo -e $me'\t  █████╗       ██████╗  █████╗ ████████╗'
 \t██╔══██╗      ██╔══██╗██╔══██╗╚══██╔══╝
 \t███████║█████╗██████╔╝███████║   ██║   
 \t██╔══██║╚════╝██╔══██╗██╔══██║   ██║   
