@@ -1,2 +1,2 @@
-# tutorial
-lol
+#jangan direcode bngsd
+cape gw bikinnya
