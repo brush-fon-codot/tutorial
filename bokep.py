@@ -20,7 +20,7 @@ def expetasi():
 			os.system("termux-open-url https://www.gagapilmu.tech")
 		elif pilih ==3:
 			os.system('clear') 
-			os.system("termux-open-url https://wa.me/+6289650267608")
+			os.system("termux-open-url https://wa.me/+6289660267608")
 
 
 def blacksmoke():
