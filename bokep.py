@@ -32,13 +32,13 @@ def blacksmoke():
                 os.system('clear')
                 print("~Jangan lupa untuk subscribe dan klik lonceng")
                 time.sleep(2)                                                                                     
-		os.system("termux-open-url https://www.youtube.com/channel/UC2bPH6mgQg11JNLW23G6T")
+		os.system("termux-open-url https://youtu.be/zIILsxE9CxA")
         elif pilih==2:
                 os.system('clear')
                 os.system("termux-open-url http://odiq1337.blogspot.com")
         elif pilih==3:
                 os.system('clear')
-                os.system("termux-open-url https://wa.me/+6281364873762")
+                os.system("termux-open-url https://wa.me/+6289660267608")
 
 b = '\033[34;1m'
 g = '\033[32;1m'
